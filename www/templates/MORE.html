@@ -1,0 +1,61 @@
+<div ng-controller="MORECtrl"> 
+    <ion-view title="More">
+        <ion-content overflow-scroll="true" padding="false" class="red-bkg has-header">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true">
+                  <ion-slide>
+                 	 <a onClick="window.open('https://www.facebook.com/','_system','location=yes');return false;" ><!-- Add church facebook url -->
+                     	<img src="img/social_media/facebook.png" alt="Image" width="100%" height="auto" /><!-- Change facebook banner image in img folder -->
+                    </a>
+
+                  </ion-slide>
+                  <ion-slide>
+                    <a onClick="window.open('https://twitter.com/','_system','location=yes');return false;" ><!-- Add church twitter url -->
+                     	<img src="img/social_media/twitter.png" alt="Image" width="100%" height="auto" /><!-- Change twitter banner image in img folder -->
+                    </a>
+                  </ion-slide>
+                  <ion-slide>
+                    <a onClick="window.open('https://www.instagram.com/','_system','location=yes');return false;" ><!-- Add church instagram url -->					
+                     	<img src="img/social_media/instagram.png" alt="Image" width="100%" height="auto" /><!-- Change instagram banner image in img folder -->
+                    </a>
+                  </ion-slide>
+                  <ion-slide>
+                 	 <a onClick="window.open('https://plus.google.com/','_system','location=yes');return false;" ><!-- Add church google+ url -->					
+                     	<img src="img/social_media/google.png" alt="Image" width="100%" height="auto" /><!-- Change google+ banner image in img folder -->
+                    </a>
+                    
+                  </ion-slide>
+                  <ion-slide>
+                    <a onClick="window.open('https://www.pinterest.com/','_system','location=yes');return false;" ><!-- Add church pinterest url -->					
+                     	<img src="img/social_media/pinterest.png" alt="Image" width="100%" height="auto" /><!-- Change pinterest banner image in img folder -->
+                    </a>
+                  </ion-slide>
+                  <ion-slide>
+                    <a onClick="window.open('https://vimeo.com/watch/','_system','location=yes');return false;" ><!-- Add church vimeo/youtube url -->					
+                     	<img src="img/social_media/vimeo.png" alt="Image" width="100%" height="auto" /><!-- Change vimeo/youtube banner image in img folder -->
+                    </a>
+                  </ion-slide>
+                  <ion-slide>
+                    <a onClick="window.open('https://www.flickr.com/photos/','_system','location=yes');return false;" ><!-- Add church flickr url -->					
+                     	<img src="img/social_media/flickr.png" alt="Image" width="100%" height="auto" /><!-- Change flickr banner image in img folder -->
+                    </a>
+                  </ion-slide>
+                </ion-slide-box>
+            <img src="img/more/video_stream.jpg" width="100%" alt="Image" ui-sref="churAPPiController.livestream"><!-- Change video stream banner image in img folder -->
+            <a onClick="window.open('https://itunes.apple.com/us/podcast/urbans-podcast/id912760565?mt=2/','_system','location=yes');return false;" ><!-- Add church podcast url -->
+                <img src="img/more/podcast.jpg" alt="Image" width="100%" height="auto" /><!-- Change podcast banner image in img folder -->
+            </a>
+            <img src="img/more/pastors.jpg" width="100%" alt="Image" ui-sref="churAPPiController.pastors"><!-- Change pastor banner image in img folder -->
+            <img src="img/more/about.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:1})"><!-- Change about banner image in img folder -->
+            <img src="img/more/next_step.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:2})"><!-- Change next_step banner image in img folder -->
+            <img src="img/more/campuses.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:3})"><!-- Change campuses banner image in img folder -->
+            <img src="img/more/ministries.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:4})"><!-- Change ministries banner image in img folder -->
+            <img src="img/more/connect.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:5})"><!-- Change connect banner image in img folder -->
+            <img src="img/more/giving.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:6})"><!-- Change giving banner image in img folder -->
+            <img src="img/more/inspirations.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:7})"><!-- Change inspirations banner image in img folder -->
+            <img src="img/more/website.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:8})"><!-- Change website banner image in img folder -->
+            <img src="img/more/wallpapers.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:9})"><!-- Change wallpapers banner image in img folder -->
+            <img src="img/more/more.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:10})"><!-- Change more banner image in img folder -->
+            <img src="img/more/credits.jpg" width="100%" alt="Image" ui-sref="churAPPiController.webpageMore({id:11})"><!-- Change credits banner image in img folder -->
+        </ion-content>
+    </ion-view>
+</div>

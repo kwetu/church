@@ -1,0 +1,27 @@
+<div ng-controller="SERIESCtrl">
+    <ion-view title="Church Series">
+        <ion-content overflow-scroll="true" padding="false" class="red-bkg has-header">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true">
+          <ion-slide>
+            <img src="img/series/banners/01.png" alt="Image" width="100%" height="auto"><!-- Change series slider 1 image -->
+          </ion-slide>
+          <ion-slide>
+            <img src="img/series/banners/02.png" alt="Image" width="100%" height="auto"><!-- Change series slider 2 image -->
+          </ion-slide>
+          <ion-slide>
+            <img src="img/series/banners/03.png" alt="Image" width="100%" height="auto"><!-- Change series slider 3 image -->
+          </ion-slide>
+        </ion-slide-box>
+        <ion-list>
+            <ion-item class="item-remove-animate item-thumbnail-left item-icon-right series-item" ng-repeat="series in church"
+                ui-sref="churAPPiController.episodesInSeries({id:series.id})" >
+                <img src="{{series.SERIES_THUMBNAIL}}" alt="Image">
+              <h1 class="item-text-center item-text-wrap" style="font-size:inherit; padding-top:15px;">
+                {{series.SERIES_HEADING}}
+                <i class="icon-arrow-right af-right"></i>
+              </h1>
+          </ion-item>
+      </ion-list>
+      </ion-content>
+    </ion-view>
+</div>

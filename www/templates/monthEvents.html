@@ -1,0 +1,18 @@
+<div ng-controller="monthEventsCtrl">  
+    <ion-view title="Month">
+        <ion-content overflow-scroll="true" padding="false" class="red-bkg has-header">
+            <img src="{{evBanner}}" alt="Image" width="100%" height="auto" style="text-align:center;" />
+            <ion-list>
+                    <ion-item ng-repeat="day in month" ui-sref="churAPPiController.eventDetails({id:day.id})" >
+                        <ul class="month-events"> 
+                        	<li class="margin-top">{{day.EVENT_MONTH}}</li><br />
+                        	<li class="margin-bottom red-color">{{day.EVENT_DAY}}</li>
+                        </ul>
+                        <h1>
+                          <h2>{{day.EVENT_TITLE}}<i class="icon-arrow-right af-right"></i></h2>
+                      	</h1>
+                  </ion-item>
+              </ion-list>
+        </ion-content>
+    </ion-view>
+</div>

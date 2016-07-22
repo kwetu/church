@@ -1,0 +1,21 @@
+<div ng-controller="announcementsCtrl">  
+ <ion-view title="Announcements">
+    <ion-content overflow-scroll="true" padding="false" class="red-bkg has-header">
+        <ion-list>
+              <ion-item ng-repeat="news in announcements" class="con-bkg">
+                  <img class="full-image" src="{{news.NEWS_IMAGE}}" width="100%" height="100%" alt="Image">
+                    <div class="item-text-wrap grey-bkg">
+                        <div class="title padding red-bkg" style="font-weight:bold">{{news.NEWS_TITLE}}</div>
+                    <!--div style="float:right;">
+                        <button class="button button-icon icon icon-share dark-color" ng-click="shareAll()"></button>
+                    </div-->
+                        <p class="subdued padding">{{news.NEWS_DATE_TIME}}</p><br>
+                    </div>
+                    <div class="item-text-wrap padding grey-bkg">
+                        {{news.NEWS_DESCRIPTION}}
+                    </div><br /><br />
+              </ion-item>
+         </ion-list>
+    </ion-content>
+   </ion-view>
+</div>

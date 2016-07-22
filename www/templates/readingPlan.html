@@ -1,0 +1,21 @@
+<div ng-controller="readingPlanCtrl"> 
+    <ion-view title="Reading Plan">
+        <ion-content overflow-scroll="true" padding="false" class="red-bkg has-header">
+        	<img src="img/bible/reading_plan_banner.png" width="100%" alt="Reading Plan" 
+               		ui-sref="churAPPiController.readingPlan" /><!-- Change reading plan banner image in img folder -->	
+            <ion-list>
+                <ion-item ng-repeat="verse in bible" class="animated fadeIn item-remove-animate item-icon-right" ui-sref="churAPPiController.readingPlanDetails({id:verse.id})" >
+                   <ul class="month-events"> 
+                        	<li class="margin-top">{{verse.READING_WEEK_DAY}}</li><br />
+                        	<li class="margin-bottom red-color">{{verse.READING_DATE}}</li>
+                        </ul>
+                    <h1>
+                      <h2>{{verse.READING_PLAN_TITLE}}</h2>
+                      <p>{{verse.READING_PLAN_VERSE}}</p>
+                      <i class="icon icon-arrow-right af-right"></i>
+                    </h1>
+              	</ion-item>
+             </ion-list>
+        </ion-content>
+    </ion-view>
+</div>

@@ -1,0 +1,30 @@
+<div ng-controller="episodeDetailsCtrl">
+	<ion-nav-title>{{series.title}}</ion-nav-title>
+    <ion-content  overflow-scroll="true" padding="false" class="has-header">
+        <iframe width="100%" height="80%" autoplay = "1"
+            src="{{epVideo | trustAsResourceUrl}}" 
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+             <!--a class="button icon-right ion-ios-upload-outline button-clear button-dark" ng-click="shareAll()" style="float: right; color: green"></a-->
+         
+          	<div class="dark-color item-body" style="text-align:center; text-transform:uppercase;">
+                <strong>{{epTitle}}</strong>
+            </div>
+            <div class="item item-body footer-bkg">
+            	<span class="bold-h">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="grey-color">{{epStartDate}}</i></span><br />
+                <button class="button button-icon icon icon-share red-color"
+                    ng-click="shareAll()" style="float:right; padding-right:5%">
+                </button>
+            	<span class="bold-h">Pastor:&nbsp;&nbsp;<i class="grey-color">{{epPastor}}</i></span><br />
+            	<span class="bold-h">Week:&nbsp;&nbsp;&nbsp;&nbsp;<i class="grey-color">{{epWeek}}</i></span><br />
+            	<span class="bold-h">Series Ends: <i class="grey-color">{{epEndDate}}</i></span>
+            </div>
+            <div class="item item-body grey-bkg">
+            <iframe width="100%" height="120" scrolling="no" frameborder="no" 
+                src="{{epAudio | trustAsResourceUrl}}">
+            </iframe></div>
+                <div class="item item-text-wrap footer-bkg">
+                    {{epDesc}}
+                </div>
+    </ion-content>
+</div>

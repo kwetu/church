@@ -1,0 +1,18 @@
+<div ng-controller="episodesInSeriesCtrl">
+    <ion-view style="" title="Episodes">
+        <ion-content class="has-header" overflow-scroll="true" padding="false">
+            <img src="{{epBanner}}" alt="Image" width="100%" height="auto" />
+                <ion-list>
+                    <ion-item ng-repeat="episodes in series" class="item-thumbnail-left item-icon-right" 
+                        ui-sref="churAPPiController.episodeDetails({id:episodes.id})" >
+                        <img src="{{episodes.EPISODE_NUMBER_IMAGE}}" alt="Image"/>
+                        <h1>
+                          <h2>{{episodes.EPISODE_TITLE}}<i class="icon-arrow-right af-right"></i></h2>
+                         
+                          <p>{{episodes.EPISODE_START_DATE}}</p>
+                        </h1>
+                  </ion-item>
+              </ion-list>
+        </ion-content>
+    </ion-view>
+</div>

@@ -1,0 +1,18 @@
+<div ng-controller="readingPlanDetailsCtrl"> 
+    <ion-view title="Selected Plan">
+        <ion-content overflow-scroll="true" padding="false" class="con-bkg has-header">
+            <img class="full-image" src="{{readBanner}}" width="100%" alt="Image"><br /><br />
+                	<div class="item item-text-wrap grey-bkg" style="font-size:large; text-align:center">
+                        <strong>{{readVerse}}</strong>
+                    </div>
+                    <div class="item item-text-wrap">
+                        {{readPlan}}
+                    </div>
+                  <div class="item item-text-wrap grey-bkg">
+                    <iframe width="100%" height="auto" scrolling="no" frameborder="no"
+                        src="{{readAudio | trustAsResourceUrl}}">
+                    </iframe>
+                  </div> 
+        </ion-content>
+    </ion-view>
+</div>

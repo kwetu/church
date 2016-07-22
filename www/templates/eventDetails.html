@@ -1,0 +1,67 @@
+<div ng-controller="eventDetailsCtrl"> 
+    <ion-view>
+        <ion-content overflow-scroll="true" padding="false" class="con-bkg has-header" ng-init="initialize()">
+            <ion-nav-title>{{events}}</ion-nav-title>
+                  <img src="{{evImageUrl}}" width="100%" height="auto" alt="Image">
+                    <div class="list card">
+                    	<img src="{{evMapImageUrl}}" width="100%" height="auto" alt="Image"  ui-sref="churAPPiController.map({id:details.id})">
+                    </div>
+                    <div class="grey-bkg list card">
+                        <div class="grey-bkg item item-text-wrap">
+                        	<strong class="red-color">Date/Time:</strong>
+                            <div style="float:right; width:50%">
+                            	{{evDateTime}}<br /><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grey-bkg list card">
+                        <div class="grey-bkg item item-text-wrap">
+                        	<strong class="red-color">Location:</strong>
+                            <div style="float:right; width:50%">
+                            	{{evLocation}}<br /><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grey-bkg list card">
+                        <div class="grey-bkg item item-text-wrap">
+                        	<strong class="red-color">Notes:</strong>
+                            <div style="float:right; width:50%">
+                            	{{evNotes}}<br /><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list card">
+                        <div class="grey-bkg item item-text-wrap">
+                            {{evDesc}}
+                        </div>
+                    </div>
+                    <div class="con-bkg list card">
+                        <div class="button-bar" align="center">
+                            <p ng-if="event.status">This event is already added to your calendar!</p>
+                        	<button class="button button-icon icon icon-calendar-check grey-color" 
+                            	ng-if="!event.status" ng-click="addEvent(event,$index)">
+                            </button>
+                        	<button class="button button-icon icon icon-share grey-color"
+                            	ng-click="shareAll()">
+                            </button>
+							<button class="button button-icon icon icon-call grey-color" 
+                            	ng-click="makeCall()">
+                            </button>
+                        	<button class="button button-icon icon icon-email grey-color" 
+                            	ng-click="sendEmail()">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grey-bkg list card">
+                        <div class="grey-bkg item item-text-wrap">
+                        	<strong class="red-color">Website</strong>
+                            <div style="float:right; width:50%">
+                            <a onClick="window.open('http://google.com','_system','location=yes');return false;">
+                            	View Events Online
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+        </ion-content>
+    </ion-view>
+</div>

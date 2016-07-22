@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* We are using Font Awesome Icons */
+@font-face {
+    font-family: 'fontawesome';
+    src:url('../fonts/fontawesome-webfont.eot');
+    src:url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Change this to the Font Family you prefer */
+.gotham{
+	font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Font Awesome Icons Start */
+.icon-series:before {
+	font-size:large;
+	vertical-align:text-bottom;
+    font-family: "fontawesome";
+    content: "\f26c";
+}
+.icon-events:before {
+	font-size:large;
+	vertical-align:text-bottom;
+    font-family: "fontawesome";
+    content: "\f271";
+}
+.icon-bible:before {
+	font-size:large;
+	vertical-align:text-bottom;
+    font-family: "fontawesome";
+    content: "\f02d";
+}
+.icon-news:before {
+	font-size:large;
+	vertical-align:text-bottom;
+    font-family: "fontawesome";
+    content: "\f1ea";
+}
+.icon-more:before {
+	font-size:large;
+	vertical-align:text-bottom;
+    font-family: "fontawesome";
+    content: "\f141";
+}
+.icon-arrow-right:before {
+	font-size:small;
+	float:right;
+	width:5%;
+	padding-top:.2em;
+	color:#F06261;
+	text-align-last:right;
+    font-family: "fontawesome";
+    content: "\f054";
+}
+
+.icon-hand:before {
+	font-size:small;
+    font-family: "fontawesome";
+    content: "\f054";
+}
+.icon-arrow-left:before {
+    font-family: "fontawesome";
+    content: "\f104";
+}
+.icon-calendar-check:before {
+    font-family: "fontawesome";
+    content: "\f274";
+}
+.icon-share:before {
+    font-family: "fontawesome";
+    content: "\f045";
+}
+.icon-call:before {
+    font-family: "fontawesome";
+    content: "\f095";
+}
+.icon-email:before {
+    font-family: "fontawesome";
+    content: "\f003";
+}
+/* Font Awesome Icons End */
+
+/* Line color <hr> */
+.bold-h{
+	color:#F06261;		
+}
+
+/* Start Icon Hover State */
+.icon-calendar-check:Hover {
+    color:#F06261;
+}
+.icon-share:Hover {
+   color:#F06261;
+}
+.icon-call:Hover {
+    color:#F06261;
+}
+.icon-email:Hover {
+    color:#F06261;
+}
+/* End Icon Hover State */
+
+/* Padding-top */
+af-pad-top{
+	padding-top: 5em;	
+}
+
+/* Start Theme colors */
+.dark-color{
+	color:#475867	
+}
+.red-color{
+	color:#F06261;	
+}
+.grey-color{
+	color:#ebebeb;	
+}
+.white-color{
+	color:#FFF;	
+}
+/* Start Theme colors */
+
+/* Start Theme background colors */
+.con-bkg{
+	background-color:#475867	 !important;
+}
+.red-bkg{
+	background-color:#F06261 !important;
+}
+.grey-bkg{
+	background-color:#ebebeb !important;
+}
+.footer-bkg{
+	background-color:#475867;
+	color: #ebebeb;	
+}
+/* End Theme background colors */
+
+/* Month events styling */
+.month-events{
+	color:#FFF;
+	font-family:Helvetica Neue, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	font-weight:200;
+	font-size:x-large; 
+	text-align: center; 
+	float:left; 
+	margin-right: 1em;
+	width:20%;
+	border-style: solid;
+	border-color: #F06261;
+	background-color: #475867;	
+}
+
+/* Reading plan styling */
+.reading-plan{
+	font-family: "Proxima Nova Bold";
+	color:#ccc;
+	text-align: center; 
+	float:left; 
+	margin-right: 1em;
+	width:20%;
+	border-radius: 10%;
+	background-color: #ebebeb;	
+}
+
+/* Margin-top */
+.margin-top{
+	margin: .2em 0 0 0;
+	font-size:smaller;
+}
+/* Margin-bottom */
+.margin-bottom{
+	margin: -.5em 0 .3em 0;
+	font-size:xx-large;
+}
+
+/* Map */
+#map{
+	width:100%;
+	height:100%;	
+}

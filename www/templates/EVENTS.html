@@ -1,0 +1,59 @@
+<div ng-controller="EVENTSCtrl">    
+    <ion-view title="Events">
+        <ion-content overflow-scroll="true" padding="false" class="red-bkg has-header">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true">
+          <ion-slide>
+            <div style="text-align:center;">
+                <img src="img/events/banners/01.jpg" alt="Image" width="100%" height="auto"><!-- Change series slider 1 image -->
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div style="text-align:center;">
+                <img src="img/events/banners/02.jpg" alt="Image" width="100%" height="auto"><!-- Change series slider 2 image -->
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div style="text-align:center;">
+                <img src="img/events/banners/03.jpg" alt="Image" width="100%" height="auto"><!-- Change series slider 3 image -->
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:1})" >
+                    <img src="img/months/jan.png" width="100%"><!-- Change january banner image in the img folder -->	
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:7})" ><!-- Change february banner image in the img folder -->	
+                    <img src="img/months/feb.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:13})" ><!-- Change march banner image in the img folder -->	
+                    <img src="img/months/mar.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:19})" ><!-- Change april banner image in the img folder -->	
+                    <img src="img/months/apr.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:25})" ><!-- Change may banner image in the img folder -->	
+                    <img src="img/months/may.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:31})" ><!-- Change june banner image in the img folder -->	
+                    <img src="img/months/jun.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:37})" ><!-- Change july banner image in the img folder -->	
+                    <img src="img/months/jul.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:43})" ><!-- Change august banner image in the img folder -->	
+                    <img src="img/months/aug.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:49})" ><!-- Change september banner image in the img folder -->	
+                    <img src="img/months/sep.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:55})" ><!-- Change october banner image in the img folder -->	
+                    <img src="img/months/oct.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:61})" ><!-- Change november banner image in the img folder -->	
+                    <img src="img/months/nov.png" width="100%">
+            </div>
+            <div class="tem-image" ui-sref="churAPPiController.monthEvents({id:67})" ><!-- Change december banner image in the img folder -->	
+                    <img src="img/months/dec.png" width="100%">
+            </div>
+        </ion-content>
+    </ion-view>
+</div>
