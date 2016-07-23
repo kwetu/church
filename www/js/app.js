@@ -14,8 +14,8 @@ angular.module('app', ['ionic','ngCordova', 'app.controllers', 'app.routes', 'ap
 		var notificationOpenedCallback = function(jsonData) {
 	    console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
 	  };
-	  window.plugins.OneSignal.init("d2e6c85f-56e2-4c7c-a7bf-ece3c3e63bdc",
-	                                 {googleProjectNumber: "304526940570"},
+	  window.plugins.OneSignal.init("9b397a4e-d1a6-47a8-b0c5-c35f4c25e44c",
+	                                 {googleProjectNumber: "108831823930"},
 	                                 notificationOpenedCallback);
 	  window.plugins.OneSignal.enableInAppAlertNotification(true);
 
